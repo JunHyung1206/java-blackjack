@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PlayersTest {
     @Test
-    @DisplayName("중복된 이름입력에 대해 입력했을 때 예외를 반환한다.")
+    @DisplayName("정상적인 이름 입력에 대해서는 성공한다.")
     void testSuccessParseCase() {
         String inputNames = "pobi, woni";
         Players players = Players.fromString(inputNames);
